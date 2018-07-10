@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>pdf Web Application</display-name>
+	<servlet>
+		<servlet-name>pdfServlet</servlet-name>
+		<display-name>pdfServlet</display-name>
+		<description></description>
+		<servlet-class>com.yzb.lee.servlet.PdfServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>pdfDownloadServlet</servlet-name>
+		<display-name>pdfDownloadServlet</display-name>
+		<description></description>
+		<servlet-class>com.yzb.lee.servlet.PdfDownloadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>pdfFontServlet</servlet-name>
+		<display-name>pdfFontServlet</display-name>
+		<description></description>
+		<servlet-class>com.yzb.lee.servlet.PdfFontServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>pdfServlet</servlet-name>
+		<url-pattern>/pdfServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>pdfDownloadServlet</servlet-name>
+		<url-pattern>/pdfDownloadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>pdfFontServlet</servlet-name>
+		<url-pattern>/pdfFontServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
