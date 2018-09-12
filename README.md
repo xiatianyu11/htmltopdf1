@@ -1,3 +1,14 @@
+<Field
+        name="a"
+        id="a"
+        type="password"
+        component="input"
+        maxLength="1"
+        placeholder="*"
+        label="Password"
+        onKeyUp={ () => document.getElementById('b').focus() }
+      />
+
 <!DOCTYPE html>
 <html>
 <head>
