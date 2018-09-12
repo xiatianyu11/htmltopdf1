@@ -1,3 +1,10 @@
+const c = {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
+	let x = Object.entries(values)
+	let t = x.map(j => {j[0] = c[j[0]]; return j;})
+	let o = t.reduce(function(prev,curr){prev[curr[0]]=curr[1];return prev;},{})
+	let a = Object.values(o)
+  console.log(a.join(''))
+
 <Field
         name="a"
         id="a"
